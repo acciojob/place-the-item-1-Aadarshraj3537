@@ -1,2 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Layout Example</title>
+    <style>
+        body {
+            background-color: #f5f5f5;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
 
-/* Your CSS Code here. */
+        .header {
+            background-color: #011e29;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .latest-news-section {
+            background-color: white;
+            margin: 20px auto;
+            padding: 20px;
+            width: 80%;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .latest-news-section h2 {
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .latest-news-section ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .latest-news-section li {
+            margin-bottom: 10px;
+            color: #555;
+        }
+
+        .pictorial-news-section {
+            background-color: white;
+            margin: 20px auto;
+            padding: 20px;
+            width: 80%;
+            text-align: center;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .pictorial-news-section img {
+            width: 100%;
+            max-width: 300px;
+            margin: 10px;
+            border-radius: 8px;
+        }
+
+        .pictorial-news-section h2 {
+            margin-bottom: 15px;
+            color: #333;
+        }
+
+        .holder {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin: 20px auto;
+            width: 80%;
+            background-color: #fff;
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .item {
+            flex: 0 1 calc(30% - 10px); /* 30% width with margin adjustment */
+            background-color: #011e29;
+            color: white;
+            margin-bottom: 10px;
+            padding: 15px;
+            text-align: center;
+            border-radius: 5px;
+        }
+
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>Daily News</h1>
+    </header>
+
+    <div class="latest-news-section">
+        <h2>Latest News</h2>
+        <ul>
+            <li>Breaking: New technology is revolutionizing industries.</li>
+            <li>Sports Update: Team A wins the championship.</li>
+            <li>Weather Alert: Heavy rainfall expected this weekend.</li>
+        </ul>
+    </div>
+
+    <div class="pictorial-news-section">
+        <h2>Pictorial News</h2>
+        <img src="Image_one" alt="News Image 1">
+        <img src="Image_two" alt="News Image 2">
+        <img src="Image_three" alt="News Image 3">
+    </div>
+
+    <div class="holder">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+        <div class="item">Item 5</div>
+    </div>
+</body>
+</html>
